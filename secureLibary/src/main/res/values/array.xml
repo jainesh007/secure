@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="autosize_text_sizes">
+        <item>3sp</item>
+        <item>4sp</item>
+        <item>5sp</item>
+        <item>7sp</item>
+        <item>9sp</item>
+        <item>11sp</item>
+        <item>13sp</item>
+    </array>
+
+    <string-array name="countries">
+
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>Andorra</item>
+
+
+        <item>Burma</item>
+        <item>Burundi</item>
+
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+
+        <item>Denmark</item>
+        <item>Djibouti</item>
+
+
+        <item>Ecuador</item>
+        <item>Egypt</item>
+
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+
+        <item>Gabon</item>
+        <item>Gambia, The</item>
+        <item>Georgia</item>
+
+        <item>Haiti</item>
+        <item>Holy See</item>
+
+        <item>Iceland</item>
+        <item>India</item>
+
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+
+        <item>Laos</item>
+        <item>Latvia</item>
+
+
+        <item>Macau</item>
+        <item>Macedonia</item>
+
+
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+
+        <item>Oman</item>
+
+        <item>Pakistan</item>
+        <item>Palau</item>
+
+        <item>Qatar</item>
+
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Vincent and the Grenadines</item>
+
+
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+
+
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+
+        <item>Vanuatu</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+
+        <item>Yemen</item>
+
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+</resources>
+
+

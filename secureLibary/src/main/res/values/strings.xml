@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">SecureInstaller</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="install_pdt_sensor">Install PTD / Sensor</string>
+    <string name="start_commissioning">Start Commissioning</string>
+
+    <string name="secure_controls">Secure Controls</string>
+    <string name="installation">Installation</string>
+    <string name="setup_manage_system">Set-up/ System management</string>
+    <string name="replace_a_programmer_or_time_switch">Replace a programmer or time switch</string>
+    <string name="replace_a_programmer">Replace programmer</string>
+    <string name="Troubleshoot_or_add_remove_device">Troubleshoot or add/remove device</string>
+    <string name="product_guide">Product guide</string>
+    <string name="recommended">Recommended</string>
+    <string name="txt_continue">Continue</string>
+    <string name="new_product_installation">New Product Installation</string>
+
+    <string name="other_compatible_product">Other compatible product</string>
+    <string name="select_replacement_product">Select replacement product</string>
+    <string name="select_a_secure_product">Select a Secure product</string>
+    <string name="select_a_existing_product">Select a existing product</string>
+    <string name="search_product"> Search product</string>
+    <string name="last_searched_product"> Last searched product</string>
+    <string name="frequently_searched_product"> Frequently searched product</string>
+    <string name="product_categories"> Product categories</string>
+    <string name="heating_and_hot_water_controls">Heating and Hot water controls</string>
+    <string name="wireless_controls">Wireless Controls</string>
+    <string name="number_of_channels">Number of channels</string>
+    <string name="power_supply">Power supply</string>
+    <string name="filters">Filters</string>
+    <string name="apply_filter">Apply Filter</string>
+    <string name="new_releases">New Releases</string>
+    <string name="secure_product">Secure Product</string>
+    <string name="wiring_and_backplate">Wiring and backplate</string>
+    <string name="instructions">Instructions</string>
+    <string name="wiring_diagram">Wiring diagram</string>
+    <string name="guided_installation">Follow the link below the guided installation</string>
+
+
+
+
+
+</resources>

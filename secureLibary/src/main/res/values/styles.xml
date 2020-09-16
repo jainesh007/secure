@@ -1,0 +1,36 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/kohinoor_devanagari_regular</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    I know this question has been repeated several times here on SO. I've gone through almost all of 'em. Out of all those, I finally implemented this solution. Now this seems to work alright. But it requires onClick event while I want it to be onTouch. Now it was easy to define onClick function for 26 text views but I see no such option for onTouch event. Can anyone please help? I'm very new to this thing.
+
+    Also, 26 text views don't fit on 1 screen. I could define their size for different screen sizes but I donno how to do that collectively for 26 text views. I followed exactly that solution (link above) this is my style attribute for my text views
+
+    <style name="alphabetTextView" parent="@android:style/TextAppearance.Medium">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+
+</resources>
