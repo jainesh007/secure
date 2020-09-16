@@ -1,0 +1,3 @@
+include ':secureLibary'
+include ':app'
+rootProject.name = "SecureInstallerSDK"
