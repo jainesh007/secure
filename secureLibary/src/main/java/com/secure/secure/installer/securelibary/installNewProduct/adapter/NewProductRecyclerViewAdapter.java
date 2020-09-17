@@ -50,7 +50,7 @@ public class NewProductRecyclerViewAdapter extends RecyclerView.Adapter<NewProdu
             ProductTableData product = product_list.get(position);
             holder.myTextView.setText(product.getProductModelName());
 
-            if (product.getIsCommissioningProduct().toLowerCase().equalsIgnoreCase("yes")) {
+            if (product.getIs_new_product().toLowerCase().equalsIgnoreCase("yes")) {
                 holder.badge_notification.setVisibility(View.VISIBLE);
             } else {
                 holder.badge_notification.setVisibility(View.INVISIBLE);

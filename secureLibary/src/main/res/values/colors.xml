@@ -7,6 +7,12 @@
     <color name="black">#000000</color>
     <color name="light_gray">#DCDCDC</color>
     <color name="gray">#AFADAD</color>
+    <color name="edit_text_gray">#AFADAD</color>
     <color name="light_blue">#6868FF</color>
     <color name="transparent">#00000000</color>
+
+    <color name="app_color">#79265c</color>
+
+
+
 </resources>

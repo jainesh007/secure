@@ -14,7 +14,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary" />
+            android:background="@color/app_color" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -44,6 +44,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
+                    android:fontFamily="@font/kohinoor_devanagari_regular"
                     android:text="@string/select_a_secure_product"
                     android:textSize="14dp" />
 
@@ -55,10 +56,12 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
+                    android:backgroundTint="@color/edit_text_gray"
                     android:drawableLeft="@drawable/search_black_icon"
+                    android:fontFamily="@font/kohinoor_devanagari_regular"
                     android:hint="@string/search_product"
-                    android:textSize="14dp"
-                    android:padding="5dp" />
+                    android:padding="5dp"
+                    android:textSize="14dp" />
 
             </LinearLayout>
 
@@ -68,6 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
+                android:fontFamily="@font/kohinoor_devanagari_regular"
                 android:text="@string/search_product"
                 android:textSize="14dp" />
 
@@ -98,6 +102,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
+                android:fontFamily="@font/kohinoor_devanagari_regular"
                 android:text="@string/product_categories"
                 android:textSize="14dp" />
 
@@ -112,9 +117,9 @@
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/rounded_corner_button"
                 android:drawableRight="@drawable/down_arrow"
+                android:drawablePadding="10dp"
                 android:gravity="center|left"
                 android:paddingLeft="20dp"
-                android:drawablePadding="10dp"
                 android:text="@string/heating_and_hot_water_controls"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
@@ -126,9 +131,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:visibility="gone"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:visibility="gone" />
 
 
             <TextView
@@ -142,6 +147,7 @@
                 android:background="@drawable/rounded_corner_button"
                 android:drawableRight="@drawable/down_arrow"
                 android:drawablePadding="10dp"
+                android:fontFamily="@font/kohinoor_devanagari_regular"
                 android:gravity="center|left"
                 android:paddingLeft="20dp"
                 android:text="@string/wireless_controls"
@@ -155,9 +161,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:visibility="gone"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="60dp" />
+                android:layout_marginBottom="60dp"
+                android:visibility="gone" />
 
 
         </LinearLayout>

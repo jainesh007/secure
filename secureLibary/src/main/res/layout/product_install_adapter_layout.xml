@@ -25,6 +25,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
             android:layout_weight=".5"
+            android:fontFamily="@font/kohinoor_devanagari_regular"
             android:text=""
             android:textSize="14dp" />
 
@@ -34,10 +35,11 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_gravity="center|right"
-            android:gravity="center|right"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="10dp"
             android:layout_weight=".3"
+            android:fontFamily="@font/kohinoor_devanagari_regular"
+            android:gravity="center|right"
             android:text="Show More"
             android:textColor="@color/light_blue"
             android:textSize="12dp" />
@@ -58,6 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/kohinoor_devanagari_regular"
             android:text="Application"
             android:textSize="14dp" />
 
@@ -68,6 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="5dp"
+            android:fontFamily="@font/kohinoor_devanagari_regular"
             android:lineSpacingExtra="3dp"
             android:text=""
             android:textSize="12dp" />

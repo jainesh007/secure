@@ -30,21 +30,24 @@
         android:id="@+id/badge_notification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="65dp"
         android:background="@drawable/new_badges"
+        android:fontFamily="@font/kohinoor_devanagari_regular"
         android:text="NEW"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/relative_layout"
         android:textColor="#FFF"
         android:textSize="10sp"
-        android:textStyle="bold"
-        android:visibility="invisible" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/product_name"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/relative_layout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
+        android:text=""
+        android:fontFamily="@font/kohinoor_devanagari_regular"
         android:gravity="center"
         android:textSize="14sp" />
 

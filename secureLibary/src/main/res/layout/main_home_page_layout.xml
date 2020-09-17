@@ -22,7 +22,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@color/colorPrimary" />
+                android:background="@color/app_color" />
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -56,6 +56,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/rounded_corner_button"
+                    android:fontFamily="@font/kohinoor_devanagari_regular"
                     android:gravity="left|center"
                     android:paddingLeft="20dp"
                     android:text="@string/replace_a_programmer_or_time_switch"
@@ -70,6 +71,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
                     android:background="@drawable/rounded_corner_button"
+                    android:fontFamily="@font/kohinoor_devanagari_regular"
                     android:gravity="left|center"
                     android:paddingLeft="20dp"
                     android:text="Install a new product"
@@ -82,6 +84,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="40dp"
                     android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/kohinoor_devanagari_regular"
                     android:text="@string/setup_manage_system"
                     android:textSize="14dp" />
 
@@ -95,6 +98,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/rounded_corner_button"
+                    android:fontFamily="@font/kohinoor_devanagari_regular"
                     android:gravity="left|center"
                     android:paddingLeft="20dp"
                     android:text="Quick pair"
@@ -110,6 +114,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/rounded_corner_button"
+                    android:fontFamily="@font/kohinoor_devanagari_regular"
                     android:gravity="left|center"
                     android:paddingLeft="20dp"
                     android:text="@string/Troubleshoot_or_add_remove_device"
@@ -125,6 +130,7 @@
                     android:layout_marginTop="60dp"
                     android:layout_marginRight="20dp"
                     android:background="@drawable/rounded_corner_button"
+                    android:fontFamily="@font/kohinoor_devanagari_regular"
                     android:gravity="left|center"
                     android:paddingLeft="20dp"
                     android:text="@string/product_guide"
@@ -167,7 +173,8 @@
                     android:layout_width="40dp"
                     android:layout_height="30dp"
                     android:layout_marginRight="20dp"
-                    android:background="@drawable/black_back_arrow" />
+                    android:background="@drawable/black_back_arrow"
+                    android:fontFamily="@font/kohinoor_devanagari_regular" />
 
             </LinearLayout>
 
@@ -183,6 +190,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="30dp"
+                android:fontFamily="@font/kohinoor_devanagari_regular"
                 android:gravity="center|left"
                 android:text="FAQ"
                 android:textColor="@color/black"
@@ -200,6 +208,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="30dp"
+                android:fontFamily="@font/kohinoor_devanagari_regular"
                 android:gravity="center|left"
                 android:text="Video"
                 android:textColor="@color/black"
@@ -217,6 +226,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="30dp"
+                android:fontFamily="@font/kohinoor_devanagari_regular"
                 android:gravity="center|left"
                 android:text="Contact Us"
                 android:textColor="@color/black"

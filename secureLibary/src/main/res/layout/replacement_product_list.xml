@@ -15,7 +15,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary" />
+            android:background="@color/app_color" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -35,8 +35,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
+                android:fontFamily="@font/kohinoor_devanagari_regular"
                 android:text="@string/select_replacement_product"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/app_color"
                 android:textSize="15dp" />
 
 
@@ -52,6 +53,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
+                    android:fontFamily="@font/kohinoor_devanagari_regular"
                     android:text="@string/recommended"
                     android:textSize="14dp" />
 
@@ -85,6 +87,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="30dp"
+                    android:fontFamily="@font/kohinoor_devanagari_regular"
                     android:text="@string/other_compatible_product"
                     android:textSize="14dp" />
 

@@ -13,7 +13,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary" />
+            android:background="@color/app_color" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -29,6 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/kohinoor_devanagari_regular"
             android:layout_marginTop="20dp"
             android:text="@string/select_a_existing_product"
             android:textSize="14dp" />
@@ -42,6 +43,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
+            android:fontFamily="@font/kohinoor_devanagari_regular"
+            android:backgroundTint="@color/edit_text_gray"
             android:drawableLeft="@drawable/search_black_icon"
             android:hint="@string/search_product"
             android:padding="5dp"

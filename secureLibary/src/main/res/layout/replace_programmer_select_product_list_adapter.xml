@@ -25,6 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/kohinoor_devanagari_regular"
             android:text=""
             android:textSize="15dp" />
     </LinearLayout>

@@ -46,8 +46,8 @@ import java.util.Map;
 
 public class MainHomePage extends AppCompatActivity {
 
-    DrawerLayout mDrawerLayout;
-    TextView product_guide, installProduct, replaceProgram, drawerIconClose, quick_pair, add_remove_device;
+    private DrawerLayout mDrawerLayout;
+    private TextView product_guide, installProduct, replaceProgram, drawerIconClose, quick_pair, add_remove_device;
 
     private ProgressDialog progressDialog;
     private ProgressDialog progressDialog2;
@@ -56,7 +56,6 @@ public class MainHomePage extends AppCompatActivity {
     private DataBaseResponse responseObject;
     private List<DataBaseModelResponse> product_list = new ArrayList<>();
     private int db_version = 0;
-
 
     private void init() {
 
@@ -87,7 +86,6 @@ public class MainHomePage extends AppCompatActivity {
         });
 
         mDb = AppDatabase.getInstance(MainHomePage.this);
-
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
@@ -138,27 +136,7 @@ public class MainHomePage extends AppCompatActivity {
         insertDataToDatabase();
     }
 
-    boolean doubleBackToExitPressedOnce = false;
-
-    @Override
-    public void onBackPressed() {
-        if (doubleBackToExitPressedOnce) {
-            super.onBackPressed();
-            return;
-        }
-
-        this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
-
-        new Handler(Looper.myLooper()).postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                doubleBackToExitPressedOnce = false;
-            }
-        }, 2000);
-    }
-
-    public String loadJSONFromAsset() {
+    private String loadJSONFromAsset() {
         String json = null;
         try {
             InputStream is = getAssets().open("databasefile.json");
@@ -246,7 +224,7 @@ public class MainHomePage extends AppCompatActivity {
 
     }
 
-    public void generateJwtToken(int version) {
+    private void generateJwtToken(int version) {
 
         showDialog("Checking version...");
 
@@ -278,7 +256,7 @@ public class MainHomePage extends AppCompatActivity {
         strReq.setRetryPolicy(new DefaultRetryPolicy(0, -1, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
     }
 
-    public void getDataBaseVersion(final String token, int version) {
+    private void getDataBaseVersion(final String token, int version) {
 
         String tag_string_req = "req_login";
         StringRequest strReq = new StringRequest(Request.Method.GET, GlobalClass.GET_DB_VERSION, response -> {
@@ -327,7 +305,7 @@ public class MainHomePage extends AppCompatActivity {
         strReq.setRetryPolicy(new DefaultRetryPolicy(0, -1, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
     }
 
-    public void getDataFormDataBase(String token) {
+    private void getDataFormDataBase(String token) {
 
         showDialog2("Updating database...");
         String tag_string_req = "req_login";
@@ -431,7 +409,7 @@ public class MainHomePage extends AppCompatActivity {
         strReq.setRetryPolicy(new DefaultRetryPolicy(0, -1, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
     }
 
-    void showDialog(String message) {
+    private void showDialog(String message) {
         runOnUiThread(new Runnable() {
             public void run() {
                 progressDialog.show();
@@ -440,7 +418,7 @@ public class MainHomePage extends AppCompatActivity {
         });
     }
 
-    void showDialog2(String message) {
+    private void showDialog2(String message) {
         runOnUiThread(new Runnable() {
             public void run() {
                 progressDialog2.show();
@@ -449,7 +427,7 @@ public class MainHomePage extends AppCompatActivity {
         });
     }
 
-    void dismissDialog2() {
+    private void dismissDialog2() {
         runOnUiThread(new Runnable() {
             public void run() {
                 progressDialog2.dismiss();
@@ -457,7 +435,7 @@ public class MainHomePage extends AppCompatActivity {
         });
     }
 
-    void dismissDialog() {
+    private void dismissDialog() {
         runOnUiThread(new Runnable() {
             public void run() {
                 progressDialog.dismiss();
