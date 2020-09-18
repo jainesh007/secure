@@ -5,13 +5,11 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -20,10 +18,13 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.android.volley.AuthFailureError;
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.HttpClientStack;
+import com.android.volley.toolbox.HttpStack;
 import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 import com.secure.secure.installer.securelibary.R;
-import com.secure.secure.installer.securelibary.SecureInstallerApplication;
 import com.secure.secure.installer.securelibary.database.AppDatabase;
 import com.secure.secure.installer.securelibary.database.AppExecutors;
 import com.secure.secure.installer.securelibary.database.GlobalClass;
@@ -34,6 +35,9 @@ import com.secure.secure.installer.securelibary.model.ProductTableData;
 import com.secure.secure.installer.securelibary.productGuide.ProductGuide;
 import com.secure.secure.installer.securelibary.replaceProgrammer.ReplaceProgrammerManufacturerNameList;
 
+import org.apache.http.client.CookieStore;
+import org.apache.http.impl.client.BasicCookieStore;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -56,6 +60,8 @@ public class MainHomePage extends AppCompatActivity {
     private DataBaseResponse responseObject;
     private List<DataBaseModelResponse> product_list = new ArrayList<>();
     private int db_version = 0;
+    private RequestQueue mRequestQueue;
+
 
     private void init() {
 
@@ -252,7 +258,7 @@ public class MainHomePage extends AppCompatActivity {
 
         };
 
-        SecureInstallerApplication.getInstance().addToRequestQueue(strReq, tag_string_req);
+        addToRequestQueue(strReq, tag_string_req);
         strReq.setRetryPolicy(new DefaultRetryPolicy(0, -1, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
     }
 
@@ -301,7 +307,7 @@ public class MainHomePage extends AppCompatActivity {
             }
         };
 
-        SecureInstallerApplication.getInstance().addToRequestQueue(strReq, tag_string_req);
+        addToRequestQueue(strReq, tag_string_req);
         strReq.setRetryPolicy(new DefaultRetryPolicy(0, -1, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
     }
 
@@ -405,7 +411,7 @@ public class MainHomePage extends AppCompatActivity {
             }
         };
 
-        SecureInstallerApplication.getInstance().addToRequestQueue(strReq, tag_string_req);
+        addToRequestQueue(strReq, tag_string_req);
         strReq.setRetryPolicy(new DefaultRetryPolicy(0, -1, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
     }
 
@@ -441,5 +447,29 @@ public class MainHomePage extends AppCompatActivity {
                 progressDialog.dismiss();
             }
         });
+    }
+
+
+    public RequestQueue getRequestQueue() {
+
+        if (mRequestQueue == null) {
+
+            DefaultHttpClient httpclient = new DefaultHttpClient();
+
+            CookieStore cookieStore = new BasicCookieStore();
+            httpclient.setCookieStore(cookieStore);
+
+            HttpStack httpStack = new HttpClientStack(httpclient);
+            mRequestQueue = Volley.newRequestQueue(getApplicationContext(), httpStack);
+        }
+
+        return mRequestQueue;
+    }
+
+
+    public <T> void addToRequestQueue(Request<T> req, String tag) {
+        // set the default_ring tag if tag is empty
+        req.setTag(TextUtils.isEmpty(tag) ? "MainHomePage" : tag);
+        getRequestQueue().add(req);
     }
 }
